@@ -1,0 +1,34 @@
+---
+title: "Introduction to the phylogenetictree package"
+output:
+  html_document:
+    theme: spacelab
+    highlight: tango
+---
+[quickd3map](http://github.com/zachcp/quickd3map) is an [htmlwidget](https://github.com/ramnathv/htmlwidgets)
+ JavaScript/D3 chart library.
+
+## Installation
+
+`devtools::install_github("zachcp/quickd3map")`
+
+## Usage
+
+```{r setup, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(dplyr.print_min = 4L, dplyr.print_max = 4L)
+library(phylogenetictree)
+```
+
+The `phylogenetictree` pacakge is an [htmlwidget](http://www.htmlwidgets.org/) that is based on the [D3.js](http://d3js.org/) JavaScript library. phylogenetictree is a near-clone of Mike Bostock's [tree of life](http://bl.ocks.org/mbostock/c034d66572fd6bd6815a)
+
+
+## Making a Tree
+
+```{r }
+library(phylogenetictree)
+
+phylogenetictree(lifetree)
+```
+
+
