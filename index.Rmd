@@ -5,7 +5,7 @@ output:
     theme: spacelab
     highlight: tango
 ---
-[quickd3map](http://github.com/zachcp/quickd3map) is an [htmlwidget](https://github.com/ramnathv/htmlwidgets)
+[phylogenetictree](http://github.com/zachcp/phylogenetictree) is an [htmlwidget](https://github.com/ramnathv/htmlwidgets)
  JavaScript/D3 chart library.
 
 ## Installation
