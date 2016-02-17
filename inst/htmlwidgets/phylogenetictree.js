@@ -29,7 +29,8 @@ HTMLWidgets.widget({
   tre = params.tree;
 
   // add checkbox
-  d3.select("#" + el.id).append("label")
+  d3.select("#" + el.id)
+    .append("label")
     .attr("id", "show-length")
     .text("Show Branch length")
       .append("input")
