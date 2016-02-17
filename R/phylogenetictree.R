@@ -1,17 +1,21 @@
-#' <Add Title>
-#'
-#' <Add Description>
+#' draw a radial phylogenetic tree
 #'
 #' @import htmlwidgets
 #'
 #' @export
-phylogenetictree <- function(tree, outerradius = 480, innerradius = 310, width = NULL, height = NULL) {
+phylogenetictree <- function(tree, colordomain, outerradius = 480, 
+                             innerradius = 310, width = NULL, height = NULL) {
 
+  if (!is.character(colordomain)) {
+    colordomain <- c("")
+  }   
+    
   # forward options using x
   params = list(
     tree = tree,
     outerradius = outerradius,
-    innerradius = innerradius
+    innerradius = innerradius,
+    colordomain = colordomain
   )
 
   # create widget
